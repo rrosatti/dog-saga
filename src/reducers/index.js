@@ -1,12 +1,12 @@
 import * as types from '../actions';
 
-const initiallState = {
+const initialState = {
   fetching: false,
   dog: null,
   error: null
 };
 
-const reducer = (state = initiallState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case types.API_CALL_REQUEST:
       return { ...state, fetching: true, error: null };
