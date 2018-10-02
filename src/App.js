@@ -28,6 +28,8 @@ class App extends Component {
         )}
 
         {error && <p style={{ color: 'red' }}>Uh oh - something went wrong!</p>}
+        <br/>
+        <br/>
 
       </div>
     );

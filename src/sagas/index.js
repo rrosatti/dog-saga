@@ -11,7 +11,7 @@ const fetchDog = () => (
   axios({
     method: 'get',
     url: 'https://dog.ceo/api/breeds/image/random'
-  });
+  })
 )
 
 // makes the api call when watcher saga sees the action

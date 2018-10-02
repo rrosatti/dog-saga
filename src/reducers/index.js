@@ -1,4 +1,4 @@
-import * as types from '../actions';
+import * as types from '../constants/ActionTypes';
 
 const initialState = {
   fetching: false,
@@ -6,7 +6,7 @@ const initialState = {
   error: null
 };
 
-const reducer = (state = initialState, action) => {
+export const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.API_CALL_REQUEST:
       return { ...state, fetching: true, error: null };
@@ -17,6 +17,6 @@ const reducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
-export default reducer;
+//export default rootReducer;
